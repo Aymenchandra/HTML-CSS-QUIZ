@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Start Your Quiz</title>
+    <link rel="stylesheet" href="styleTASK.css">
+    
+</head>
+<body>
+    <h1>Test your knowledge on a variety of fun and interesting topics including Python</h1>
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" >Start</button>
+                <button type="button" class="toggle-btn" >Task1</button>   
+                <button type="button" class="toggle-btn" >Task2</button>
+                <button type="button" class="toggle-btn" >Task3</button>   
+                <button type="button" class="toggle-btn" >Task4</button>
+                <button type="button" class="toggle-btn" >Task5</button>   
+            </div>
+            <form class="input-group" id="Start">
+                <h3>Instruction:</h3>
+                <p>Total number of question: 5</p> 
+                <input type="button" class="Start-btn" value="Start Quiz" onclick="Start()"></button>
+            </form>
+            <form class="input-group" id ="task1" name="f">
+                <h2 class="Question">What will be the output of the following statement? 
+                    <br>ch="Movies"
+                    <br>print(isalpha(ch))
+                </h2>
+                <div class="button-group">
+                    <input type="button" class="input-button" id="1" name="false1" onclick="reponse(id,'');Task1()" value="True" >
+                    <input type="button" class="input-button" id="2" name="vrai" onclick="reponse(id,'');Task1()" value="False">
+                    <input type="button" class="input-button" id="3" name="false2" onclick="reponse(id,'true');Task1()" value="Erreur">   
+                </div>
+                <p></p><div id="score"></div>
+            </form>
+            <form class="input-group" id ="task2" name="f1">
+                <h2 class="Question">What will be the output of the following statement? 
+                    <br>ch="Developement"
+                    <br>print(ch[-1::2])
+                </h2>
+                <div class="button-group">
+                    <input type="button" class="input-button" id="4" name="false1" onclick="reponse(id,'');Task2()" value="teeoee" >
+                    <input type="button" class="input-button" id="5" name="vrai" onclick="reponse(id,'true');Task2()" value="t">
+                    <input type="button" class="input-button" id="6" name="false2" onclick="reponse(id,'');Task2()" value="Erreur">    
+                </div>
+                <p><div  id="score1"></div></p>
+            </form>
+            <form class="input-group" id ="task3" name="f2">
+                <h2 class="Question">What will be the output of the following statement? 
+                    <br>ch="Python"
+                    <br>print(ch[2:6])
+                </h2>
+                <div class="button-group">
+                    <input type="button" class="input-button" id="7" name="false1"onclick="reponse(id,'');Task3()" value="ython" >
+                    <input type="button" class="input-button" id="8" name="vrai"onclick="reponse(id,'true');Task3()" value="thon">
+                    <input type="button" class="input-button" id="9" name="false2" onclick="reponse(id,'');Task3()" value="hon">    
+                </div>
+                <p></p><div  id="score2"></div>
+            </form>
+            <form class="input-group" id ="task4" name="f3">
+                <h2 class="Question">What will be the output of the following statement? 
+                    <br>ch="Statement"
+                    <br>print(ch.count("s"))
+                </h2>
+                <div class="button-group">
+                    <input type="button" class="input-button" id="10" name="false1"onclick="reponse(id,'');Task4()" value="2" >
+                    <input type="button" class="input-button" id="11" name="vrai"onclick="reponse(id,'true');Task4()" value="1">
+                    <input type="button" class="input-button" id="12" name="false2" onclick="reponse(id,'');Task4()" value="0">    
+                </div>
+                <p></p><div  id="score3"></div>
+            </form>
+            <form class="input-group" id ="task5" name="f4">
+                <h2 class="Question">What will be the output of the following statement? 
+                    <br>ch="I like watching TV"
+                    <br>print(ch.isalpha())
+                </h2>
+                <div class="button-group">
+                    <input type="button" class="input-button" id="13" name="false1"onclick="reponse(id,'');result()" value="True" >
+                    <input type="button" class="input-button" id="14" name="true"onclick="reponse(id,'true');result()" value="False">
+                    <input type="button" class="input-button" id="15" name="false2" onclick="reponse(id,'');result()" value="Erreur">    
+                </div>
+                <p></p><div  id="score4"></div>
+            </form> 
+            <div class="input-group" id ="result" >
+                <table border="1" class="content-table">
+                    <tr>
+                        <td>Total Question</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Attempt</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Correct</td>
+                        <td id="correct"></td>
+                    </tr>
+                    <tr>
+                        <td>Wrong</td>
+                        <td id="wrong"></td>
+                    </tr>
+                    <tr>
+                        <td>Percentage</td>
+                        <td id="percentage"></td>
+                    </tr>
+                    <tr>
+                        <td>Your Total Score</td>
+                        <td id ="total"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>    
+                <input type="button" value="Try Again" onclick="location.reload()">
+                <input type="button" value="Go To Home" onclick="location.assign('../Quizz/Accueil.html')">
+            </div> 
+            
+        </div>
+        <script  src="Controle.js"></script>
+
+</body>
+</html>
